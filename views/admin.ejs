@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revenue</title>
+</head>
+<body>
+    <h1>administration only</h1>
+    <button type="submit" id="reset" name="button">RESET</button>
+</form>
+
+<% messages.forEach(el => {%>
+  <span style="display: none;" id="objectId"><%=el._id%></span>
+    <h2>$<%=el.value%></h2>
+    <h2>Wins:<%=el.wins%></h2>
+    <h2>Losses:<%=el.loss%></h2>
+    <h2>Money Won:$<%=el.moneyWon%></h2>
+    <h2>Money Loss:$<%=el.moneyLoss%></h2>
+    <%})%>
+
+<button style="display: none;" type="submit" class="submitBtn">BET</button>
+<button style="display: none;"type="submit" class="resetBtn">RESET</button>
+
+<script src="main.js"></script>
+</body>
+</html>
